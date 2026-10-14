@@ -1,0 +1,36 @@
+.finale-card {
+  border-color: #e3b84c;
+  background: linear-gradient(135deg, #fffdf2, #fff0b8);
+  box-shadow: 0 4px 0 #c99b31, 0 0 24px #f6c84935;
+}
+.finale-card .quest-icon { background: #14385b; color: #ffd465; text-shadow: 0 0 12px #fff; }
+.quest-status { min-width: 54px; text-align: right; letter-spacing: .04em; color: #bd7d09; }
+.earned-stars { font-size: 2rem; color: #e0a11d; letter-spacing: .13em; margin: -4px 0 15px; text-shadow: 0 2px #fff, 0 3px 8px #cf902955; }
+.gospel-progress { display: flex; justify-content: center; gap: 8px; margin-bottom: 22px; }
+.gospel-progress span { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: #e7eeeb; color: #647b7b; font-weight: 900; border: 2px solid #d0dfda; }
+.gospel-progress span.done { background: #bdebbd; color: #195b36; border-color: #75bd80; }
+.gospel-progress span.current { background: #ffd465; color: #14385b; border-color: #d9a634; box-shadow: 0 0 0 5px #ffe9a273; }
+.gospel-question small { display: block; color: #397590; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.gospel-question h2 { font: 800 clamp(1.55rem, 4vw, 2.3rem)/1.2 Georgia, serif; margin: 8px 0 20px; }
+.answer-list { display: grid; gap: 10px; }
+.answer-list button { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-height: 62px; padding: 12px 16px; border: 2px solid #c4d9d7; border-radius: 13px; background: #f8fffc; color: #17334c; text-align: left; font-weight: 800; }
+.answer-list button:hover, .answer-list button:focus-visible { border-color: #e2a72c; background: #fff7d9; transform: translateY(-1px); }
+.answer-list button span { color: #af7810; font-size: 1.25rem; }
+.final-victory { position: relative; overflow: hidden; background: radial-gradient(circle at 50% 15%, #fffdf1 0, #fff8d7 26%, #fffaf0 65%); }
+.final-victory > *:not(.victory-rays) { position: relative; z-index: 1; }
+.victory-rays { position: absolute; z-index: 0; left: 50%; top: 72px; width: 470px; height: 470px; transform: translateX(-50%); border-radius: 50%; background: repeating-conic-gradient(from 0deg, #ffd46540 0 10deg, transparent 10deg 22deg); animation: glory 24s linear infinite; }
+.final-victory .win-icon { font-size: 5.5rem; color: #b67a0a; text-shadow: 0 0 30px #ffd465; }
+.final-victory h1 { color: #14385b; }
+.final-victory .eyebrow { color: #a06a00; }
+.final-victory .primary { background: #ad7310; border-color: #8e5b08; }
+.final-victory .primary:hover { background: #c28a22; }
+@keyframes glory { to { transform: translateX(-50%) rotate(360deg); } }
+@media (max-width: 500px) {
+  .quest-status { font-size: .67rem; min-width: 45px; }
+  .gospel-progress { gap: 5px; }
+  .gospel-progress span { width: 32px; height: 32px; }
+  .answer-list button { min-height: 58px; padding: 10px 12px; }
+  .final-victory .win-icon { font-size: 4.5rem; }
+  .victory-rays { width: 360px; height: 360px; }
+}
+@media (prefers-reduced-motion: reduce) { .victory-rays { animation: none; } }
