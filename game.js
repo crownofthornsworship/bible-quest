@@ -1,5 +1,4 @@
 const $=s=>document.querySelector(s);
-document.head.insertAdjacentHTML('beforeend','<link rel="stylesheet" href="enhancements.css">');
 const quests=[
  {title:'The First Days',chapter:'Creation',reference:'Genesis 1:1–31',icon:'☀',kind:'creation',intro:'God made the heavens and the earth. Put the six days of Creation in order.'},
  {title:'Two by Two',chapter:'Noah',reference:'Genesis 6:19–20',icon:'🐘',kind:'pairs',intro:'Noah brought living creatures into the ark. Find each animal’s match.'},
